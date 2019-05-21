@@ -18,7 +18,8 @@ class GUI(QMainWindow):             # inherit from QMainWindow
         self.positional_widget_layout()
 
     def positional_widget_layout(self):
-        label = QLabel('Our first label', self)  
+        label = QLabel('Our first label', self)
+        label.move(10,20)
           
           
     def add_menus_and_status(self):        
