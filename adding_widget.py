@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QAction 
 from PyQt5.QtGui import QIcon
+from PyQt5.Qt import QLabel
 
 class GUI(QMainWindow):             # inherit from QMainWindow
     def __init__(self): 
@@ -12,8 +13,12 @@ class GUI(QMainWindow):             # inherit from QMainWindow
     def initUI(self):                       # set properties and add widgets        
         self.setWindowTitle('PyQt5 GUI')    # refer to Window as self
         self.resize(400,300)                # resize window (width, height) 
-          
         self.add_menus_and_status()
+
+        self.positional_widget_layout()
+
+    def positional_widget_layout(self):
+        label = QLabel(self)  
           
           
     def add_menus_and_status(self):        
